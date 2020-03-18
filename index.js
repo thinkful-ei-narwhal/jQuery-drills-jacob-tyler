@@ -2,9 +2,9 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 $('.thumbnail').on('click', e => {
-  const src = $(event.currentTarget).find('img').attr('src');
+  const src = $(e.currentTarget).find('img').attr('src');
   console.log(src);
-  const alt = $(event.currentTarget).find('img').attr('alt');
+  const alt = $(e.currentTarget).find('img').attr('alt');
   console.log(alt)
   $('.hero img').attr('src', src);
   $('.hero img').attr('alt',alt);
